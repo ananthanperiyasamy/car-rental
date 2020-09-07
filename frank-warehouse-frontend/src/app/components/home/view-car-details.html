@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Car information! </h1>
+<div mat-dialog-content>
+  <p><strong>Make </strong> :{{data.make}}</p>
+  <p><strong>Model </strong>:{{data.model}}</p>
+  <p><strong>Year  </strong>:{{data.year_model}}</p>
+  <p><strong>Price </strong>:{{data.price}}</p>
+  <p>This car in {{data.warhouse}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Ok</button>
+</div> 

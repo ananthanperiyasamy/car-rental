@@ -1,0 +1,38 @@
+<div class="shopping-container" *ngIf="totalprice > 0; else elseBlock">
+<p>Your shopping cart : </p>
+<mat-accordion class="shopping-headers-align">
+  <div fxLayout="column" fxLayoutAlign="center stretch" class="content">
+    <mat-expansion-panel *ngFor="let item of cartProducts; let count=index" [expanded]="step === count" (opened)="setStep(count)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Product {{count}}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{item.make}} {{item.model}} 
+            <!-- <mat-icon>map</mat-icon> -->
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="mat-expansion">
+          <div>
+            <label> Make : {{item.make}}  </label>
+            <br>
+            <label> Model : {{item.model}} </label>
+            <br>
+            <label> Year :{{item.year_model}} </label>
+            <br>
+            <label> Price : {{item.price}} </label>
+            <br>
+            <label> Available from  : {{item.date_added}} </label>
+            <br>
+           
+          </div>
+        </div>
+        <br>
+    </mat-expansion-panel>
+    <label> Total Price : {{totalprice}} </label>
+    <button mat-button class="homeButton" (click)="checkout()">Checkout</button>
+  </div>
+</mat-accordion> 
+</div>
+<ng-template #elseBlock>Your shopping cart if empty !</ng-template>

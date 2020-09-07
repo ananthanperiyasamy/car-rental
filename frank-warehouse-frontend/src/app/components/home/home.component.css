@@ -1,0 +1,27 @@
+.example-header-image {
+    background-size: cover;
+  }
+  
+  .product-overview-conatiner {
+    margin-top: 10px;
+  }
+  
+  .card-container {
+    margin: 0px 5px 10px 5px;
+  }
+  
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  .price{
+    font-size: 21px;
+    font-family: serif;
+    color: #1c7554;
+    float: right
+  }
+
+  .homeButton{
+    background-color: cadetblue;
+  }
+  

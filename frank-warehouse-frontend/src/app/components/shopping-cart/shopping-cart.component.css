@@ -1,0 +1,28 @@
+.shopping-container {
+    padding: 60px;
+}
+
+.shopping-headers-align .mat-expansion-panel-header-title,
+.shopping-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.shopping-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 50px;
+}
+
+
+.mat-expansion {
+  display: flex;
+}
+
+
+.homeButton{
+  background-color: cadetblue;
+  width: 90px;
+}
