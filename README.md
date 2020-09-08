@@ -9,9 +9,3 @@ To run the frontEnd angular component:
 
 
 
-To Kill Node.js:
------------------
-ps aux | grep node
-Kill all process id's starts with 814 "kill -9 814**"
-
-
